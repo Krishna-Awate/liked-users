@@ -4,8 +4,6 @@ import Card from "./Card";
 import LikeButton from "./LikeButton";
 import Navbar from "./Navbar";
 import "./Routing.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const HomePage = () => {
   const [user, setUsers] = useState(
@@ -47,7 +45,7 @@ const HomePage = () => {
   const userData = [];
   for (let i = start; i < end && user.length > 0; i++) {
     const eachUser = (
-      <div key={i} className="col-md-4 my-2 ">
+      <div key={i} className="col-md-4 my-2">
         <div className="users">
           <Card
             image={user[i].image}
@@ -61,7 +59,6 @@ const HomePage = () => {
               likeButtonToggleHandler={() => likeButtonToggleHandler(i)}
               liked={user[i].isLike}
             />
-            <FontAwesomeIcon icon="check-square" />
           </div>
         </div>
       </div>

@@ -31,7 +31,9 @@ const LikedUser = () => {
 
   return (
     <>
-      <h1>Liked user list</h1>
+      <h3 style={{ textAlign: "center", marginTop: "30px" }}>
+        Liked user list
+      </h3>
       <div className="container">
         <div className="row">{users}</div>
       </div>
